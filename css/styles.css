@@ -167,6 +167,8 @@ img {
 
     padding-top: 188px;
     padding-bottom: 188px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-title {
@@ -216,6 +218,14 @@ img {
 }
 .benefit-item {
     flex-basis: calc((100% - 72px) / 4);
+}
+.benefits-icon {
+    /* TODO: pay attantion! padding or flex*/
+    padding: 24px 100px;
+    border-radius: 4px;
+    border: 1px solid var(--subtle-text);
+    background-color: var(--light);
+    margin-bottom: 8px;
 }
 
 .general-title {
