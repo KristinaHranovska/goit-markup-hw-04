@@ -104,11 +104,29 @@ img {
     align-items: center;
     gap: 40px;
 }
+
 .site-link {
     display: block;
+    position: relative;
+    
     padding-top: 24px;
     padding-bottom: 24px;
 }
+.site-link.active {
+    color: var(--pressed-state);
+}
+.site-link.active::after,
+.site-link:hover::after {
+    display: block;
+    width: 100%;
+    min-height: 4px;
+    border-radius: 2px;
+    background-color: var(--pressed-state);
+    content: "";
+    position: absolute;
+    margin-top: 20px;
+}
+
 .link-decoration {
     color: var(--dark);
     font-size: 16px;
@@ -136,6 +154,7 @@ img {
 
 /* --------- Hero part --------- */
 .hero {
+    max-width: 1440рх;
     background-color: var(--hero-background);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.70),
@@ -143,6 +162,8 @@ img {
     url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
     padding-top: 188px;
     padding-bottom: 188px;
