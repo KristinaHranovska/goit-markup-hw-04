@@ -285,7 +285,8 @@ img {
 
 .social-list {
     display: flex;
-    gap: 16px;
+    justify-content: center;
+    gap: 24px;
 }
 .social-link {
     display: flex;
